@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 500" fill="none" preserveAspectRatio="none">
+  <!-- Depth glow — emerges further off-screen right -->
+  <path d="M 360,-30 C 400,90 375,270 330,540"
+        stroke="#035e3e" stroke-width="3.5" opacity="0.5"/>
+  <path d="M 385,-30 C 428,92 404,272 358,542"
+        stroke="#035e3e" stroke-width="2" opacity="0.28"/>
+
+  <!-- Main lines — each progressively further off screen to the right -->
+  <path d="M 310,-30 C 352,88 326,266 280,536"
+        stroke="#04724d" stroke-width="3" opacity="0.8"/>
+  <path d="M 332,-30 C 376,90 350,268 304,538"
+        stroke="#04724d" stroke-width="2.2" opacity="0.62"/>
+  <path d="M 354,-30 C 400,92 374,270 328,540"
+        stroke="#04724d" stroke-width="1.5" opacity="0.45"/>
+  <path d="M 376,-30 C 424,94 398,272 352,542"
+        stroke="#04724d" stroke-width="1" opacity="0.28"/>
+  <path d="M 398,-30 C 448,96 422,274 376,544"
+        stroke="#04724d" stroke-width="0.7" opacity="0.15"/>
+</svg>

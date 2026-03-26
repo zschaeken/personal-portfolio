@@ -57,8 +57,26 @@
   z-index: 0;
 }
 
+.wave-lines-green-right {
+  position: absolute;
+  top: 0; right: 0;
+  width: 380px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.wave-lines-orange-left {
+  position: absolute;
+  top: 0; left: 0;
+  width: 360px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
 /* Alles binnen een wave-sectie boven de golf */
-.has-wave > *:not(.wave-green-tl):not(.wave-orange-br):not(.wave-green-br):not(.wave-orange-bl) {
+.has-wave > *:not(.wave-green-tl):not(.wave-orange-br):not(.wave-green-br):not(.wave-orange-bl):not(.wave-lines-green-right):not(.wave-lines-orange-left) {
   position: relative;
   z-index: 1;
 }

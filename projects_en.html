@@ -106,14 +106,17 @@
             <div class="project-img-grid">
               <div class="project-img-slot">
                 <img src="images/poutrel-1.jpg" alt="Poutrel screenshot 1"
+                     onclick="openLightbox(this)"
                      onerror="this.outerHTML='<span class=\'img-placeholder\'>photo 1</span>'" />
               </div>
               <div class="project-img-slot">
                 <img src="images/poutrel-2.jpg" alt="Poutrel screenshot 2"
+                     onclick="openLightbox(this)"
                      onerror="this.outerHTML='<span class=\'img-placeholder\'>photo 2</span>'" />
               </div>
               <div class="project-img-slot">
                 <img src="images/poutrel-3.jpg" alt="Poutrel screenshot 3"
+                     onclick="openLightbox(this)"
                      onerror="this.outerHTML='<span class=\'img-placeholder\'>photo 3</span>'" />
               </div>
             </div>
@@ -170,14 +173,17 @@
             <div class="project-img-grid">
               <div class="project-img-slot">
                 <img src="images/kvvrauw-1.jpg" alt="KVV Rauw screenshot 1"
+                     onclick="openLightbox(this)"
                      onerror="this.outerHTML='<span class=\'img-placeholder\'>photo 1</span>'" />
               </div>
               <div class="project-img-slot">
                 <img src="images/kvvrauw-2.jpg" alt="KVV Rauw screenshot 2"
+                     onclick="openLightbox(this)"
                      onerror="this.outerHTML='<span class=\'img-placeholder\'>photo 2</span>'" />
               </div>
               <div class="project-img-slot">
                 <img src="images/kvvrauw-3.jpg" alt="KVV Rauw screenshot 3"
+                     onclick="openLightbox(this)"
                      onerror="this.outerHTML='<span class=\'img-placeholder\'>photo 3</span>'" />
               </div>
             </div>
@@ -277,7 +283,7 @@
       <img class="wave-orange-br" src="images/wave-orange-br.svg" alt="" />
       <div style="position:relative;z-index:1">
         <p style="color:#aaa; font-size:0.88rem">
-          &copy; 2025 <strong style="color:white">Zjef Schaeken</strong> — Thomas More APPAI
+          &copy; 2026 <strong style="color:white">Zjef Schaeken</strong> — Thomas More APPAI
         </p>
         <p style="margin-top:0.5rem; font-size:0.85rem; color:#555">
           <a href="mailto:schaekenzjef1@outlook.com" style="color:#aaa">schaekenzjef1@outlook.com</a>
@@ -287,6 +293,27 @@
 
   </div>
 
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
   <script src="nav.js"></script>
+  <script>
+    function openLightbox(img) {
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox-img').alt = img.alt;
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
 </body>
 </html>

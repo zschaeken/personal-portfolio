@@ -85,15 +85,16 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
-  border-top: 2px solid var(--black);
-  border-left: 2px solid var(--black);
+  background: var(--black);
+  width: 100%;
 }
 
 .info-block {
-  padding: 1.75rem;
-  border-right: 2px solid var(--black);
-  border-bottom: 2px solid var(--black);
+  padding: 2rem 3rem;
+  border-right: 1px solid #2a2a2a;
 }
+
+.info-block:last-child { border-right: none; }
 
 .info-block-label {
   font-family: var(--font-display);
@@ -101,7 +102,7 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--green);
   margin-bottom: 0.4rem;
 }
 
@@ -109,7 +110,7 @@
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1rem;
-  color: var(--black);
+  color: var(--white);
 }
 
 /* ---- Intro grid ---- */

@@ -83,7 +83,7 @@
 
 /* ---- Gedeelde paginaheader (about & projects) ---- */
 .page-header {
-  background: var(--black);
+  background: var(--green);
   color: var(--white);
   padding: 5rem 3rem 4rem;
 }
@@ -99,12 +99,12 @@
   margin-top: 0.5rem;
 }
 
-.page-header h1 span { color: var(--green); }
+.page-header h1 span { color: var(--white); }
 
 /* ---- Footer ---- */
 footer {
-  background: var(--black);
-  color: #aaa;
+  background: var(--green);
+  color: rgba(255, 255, 255, 0.75);
   text-align: center;
   padding: 2rem;
   font-size: 0.85rem;

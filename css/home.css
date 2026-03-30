@@ -4,7 +4,7 @@
 
 /* ---- Hero ---- */
 .hero {
-  background: var(--black);
+  background: var(--green);
   color: var(--white);
   padding: 6rem 3rem 5rem;
   min-height: 85vh;
@@ -41,11 +41,11 @@
   margin-bottom: 0.25rem;
 }
 
-.hero-name-last { color: var(--green); }
+.hero-name-last { color: var(--white); }
 
 .hero-sub {
   font-size: 1rem;
-  color: #aaa;
+  color: rgba(255, 255, 255, 0.85);
   margin-top: 1.25rem;
   max-width: 420px;
   line-height: 1.7;
@@ -63,7 +63,7 @@
   width: 300px;
   height: 360px;
   object-fit: cover;
-  border: 3px solid var(--green);
+  border: 3px solid var(--white);
 }
 
 .hero-photo-placeholder {
@@ -85,13 +85,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
-  background: var(--black);
+  background: var(--white);
   width: 100%;
 }
 
 .info-block {
   padding: 2rem 3rem;
-  border-right: 1px solid #2a2a2a;
+  border-right: 1px solid #e0e0e0;
 }
 
 .info-block:last-child { border-right: none; }
@@ -102,7 +102,7 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--green);
+  color: var(--orange);
   margin-bottom: 0.4rem;
 }
 
@@ -110,7 +110,7 @@
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1rem;
-  color: var(--white);
+  color: var(--black);
 }
 
 /* ---- Intro grid ---- */

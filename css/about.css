@@ -129,6 +129,11 @@
   margin-top: 2rem;
 }
 
+.skills-stack {
+  display: grid;
+  gap: 1.5rem;
+}
+
 .skills-col h3 {
   font-family: var(--font-display);
   font-weight: 700;
@@ -137,6 +142,26 @@
   letter-spacing: 0.1em;
   color: var(--muted);
   margin-bottom: 1.5rem;
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.skills-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.92rem;
+}
+
+.skills-list li strong {
+  display: block;
+  color: var(--black);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  margin-bottom: 0.15rem;
 }
 
 .soft-list { list-style: none; }
@@ -196,6 +221,26 @@
   border: 1.5px solid #e0e0e0;
   margin-top: 2rem;
   display: block;
+}
+
+.cv-frame-wrap {
+  background: var(--white);
+  border: 1.5px solid #e0e0e0;
+  margin-top: 1.5rem;
+}
+
+.cv-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-top: 0.9rem;
+}
+
+.cv-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
 }
 
 .cv-btns {

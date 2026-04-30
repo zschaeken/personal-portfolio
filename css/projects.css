@@ -63,6 +63,51 @@
   max-width: 620px;
 }
 
+.project-summary {
+  font-size: 1rem;
+  color: var(--black);
+  max-width: 680px;
+}
+
+.project-block {
+  margin-top: 1.4rem;
+}
+
+.project-block h3 {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 0.55rem;
+}
+
+.project-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.project-list li {
+  font-size: 0.88rem;
+  color: var(--muted);
+  padding: 0.45rem 0;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.project-list li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: var(--green);
+  flex-shrink: 0;
+}
+
 /* ---- Contributie ---- */
 .contrib-section { margin-top: 1.25rem; }
 

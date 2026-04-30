@@ -14,14 +14,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // Actieve pagina markeren
   const page = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(a => {
-    if (a.getAttribute('href') === page) a.classList.add('active');
+    const isCurrent = a.getAttribute('href') === page;
+    a.classList.toggle('active', isCurrent);
+    if (isCurrent) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
   });
 
   // Taalknop actief markeren
   const isEN = page.includes('_en');
   document.querySelectorAll('.nav-lang a').forEach(a => {
-    if (isEN  && a.dataset.lang === 'en') a.classList.add('active');
-    if (!isEN && a.dataset.lang === 'nl') a.classList.add('active');
+    const isActiveLang = (isEN && a.dataset.lang === 'en') || (!isEN && a.dataset.lang === 'nl');
+    a.classList.toggle('active', isActiveLang);
+    if (isActiveLang) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
   });
 
   // Skill bars animeren zodra ze zichtbaar zijn

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv images/family-business-preview.jpg.png images/family-business-preview.png)",
+      "Bash(mv images/medicine-preview.jpg.png images/medicine-preview.png)"
+    ]
+  }
+}

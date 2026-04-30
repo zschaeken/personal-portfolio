@@ -46,6 +46,10 @@ nav {
   color: var(--green);
 }
 
+.nav-links a[aria-current="page"] {
+  color: var(--green);
+}
+
 .nav-right {
   display: flex;
   align-items: center;
@@ -69,6 +73,10 @@ nav {
 
 .nav-lang a:hover,
 .nav-lang a.active {
+  color: var(--green);
+}
+
+.nav-lang a[aria-current="page"] {
   color: var(--green);
 }
 

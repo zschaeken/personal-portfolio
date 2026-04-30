@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Zjef Schaeken</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/about.css" />
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">Zjef <span>Schaeken</span></span>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Over mij</a></li>
+      <li><a href="projects.html">Projecten / Realisaties</a></li>
+      <li><a href="cv.html">CV</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-lang">
+        <a href="cv.html" data-lang="nl">NL</a>
+        <span>|</span>
+        <a href="cv_en.html" data-lang="en">EN</a>
+      </div>
+      <button class="nav-toggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <header class="page-header has-wave fade-up">
+      <img class="wave-green-tl" src="images/wave-green-tl.svg" alt="" />
+      <img class="wave-lines-green-right" src="images/wave-lines-green-right.svg" alt="" />
+      <div class="page-header-inner" style="position:relative;z-index:1">
+        <p class="section-label" style="color:var(--orange)">Curriculum Vitae</p>
+        <h1>Mijn <span>CV</span></h1>
+        <p style="color:#aaa; margin-top:0.75rem">Bekijk mijn cv en download de PDF-versie rechtstreeks.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="cv-actions">
+        <a href="CV_Zjef_Schaeken_NL.pdf" download="CV_Zjef_Schaeken.pdf" class="btn btn-green">Download CV</a>
+        <a href="about.html" class="btn">Terug naar Over mij</a>
+      </div>
+      <p class="cv-note">Als de PDF niet automatisch zichtbaar is, gebruik dan de downloadknop hierboven.</p>
+      <div class="cv-frame-wrap">
+        <iframe class="cv-viewer" src="CV_Zjef_Schaeken_NL.pdf" title="CV preview van Zjef Schaeken"></iframe>
+      </div>
+    </section>
+
+    <div class="has-wave section-black" style="padding:3rem; text-align:center; position:relative; overflow:hidden">
+      <img class="wave-orange-br" src="images/wave-orange-br.svg" alt="" />
+      <div style="position:relative;z-index:1">
+        <p style="color:#aaa; font-size:0.88rem">
+          &copy; 2026 <strong style="color:white">Zjef Schaeken</strong> — Thomas More APPAI
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="nav.js"></script>
+</body>
+</html>

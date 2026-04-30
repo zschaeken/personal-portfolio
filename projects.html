@@ -140,8 +140,9 @@
             Wij bouwden de daadwerkelijke applicatie.
           </p>
           <p>
-            De app bevat: carpool, kalender, lidgeld, koppeling ouders-kinderen,
-            aanmaken en beheer van trainingen en wedstrijden.
+            De app bevat: carpool inschrijven en aanmaken, admin carpool beheren,
+            kalender, lidgeld, koppeling ouders-kinderen, aanmaken en beheer van
+            trainingen en wedstrijden.
           </p>
 
           <div class="contrib-cols">
@@ -154,6 +155,8 @@
                   <li>Agenda &amp; wedstrijd seeders</li>
                   <li>Afwezigheid doorgeven</li>
                   <li>Afbeeldingsslots in agenda-items</li>
+                  <li>Carpool inschrijven en aanmaken</li>
+                  <li>Admin carpool beheren</li>
                 </ul>
               </div>
             </div>
@@ -187,6 +190,16 @@
                 <img src="images/kvvrauw-3.jpg" alt="KVV Rauw screenshot 3"
                      onclick="openLightbox(this)"
                      onerror="this.outerHTML='<span class=\'img-placeholder\'>foto 3</span>'" />
+              </div>
+              <div class="project-img-slot">
+                <img src="images/kvvrauw-4.jpg" alt="KVV Rauw screenshot 4"
+                     onclick="openLightbox(this)"
+                     onerror="this.outerHTML='<span class=\'img-placeholder\'>foto 4</span>'" />
+              </div>
+              <div class="project-img-slot">
+                <img src="images/kvvrauw-5.jpg" alt="KVV Rauw screenshot 5"
+                     onclick="openLightbox(this)"
+                     onerror="this.outerHTML='<span class=\'img-placeholder\'>foto 5</span>'" />
               </div>
             </div>
           </div>
@@ -226,6 +239,9 @@
                 </ul>
               </div>
               <p class="note-text" style="margin-top:1rem">Trots op het visuele design.</p>
+              <button class="btn btn-green" style="margin-top:1rem; font-size:0.78rem; padding:0.5rem 1.2rem" type="button" onclick="openPacketPlagueGallery()">
+                Mijn ontwerpen
+              </button>
             </div>
           </div>
 
@@ -304,6 +320,24 @@
     <img id="lightbox-img" src="" alt="" />
   </div>
 
+  <!-- Packet Plague gallery -->
+  <div class="gallery-modal" id="packet-plague-gallery" aria-hidden="true" onclick="closePacketPlagueGallery()">
+    <div class="gallery-modal-panel" role="dialog" aria-modal="true" aria-labelledby="packet-plague-gallery-title" onclick="event.stopPropagation()">
+      <button class="gallery-modal-close" type="button" aria-label="Sluiten" onclick="closePacketPlagueGallery()">&times;</button>
+      <h3 id="packet-plague-gallery-title">Mijn ontwerpen</h3>
+      <p>Alle Packet Plague beelden op een rij.</p>
+      <div class="gallery-grid">
+        <img src="pp_images/router_home.png" alt="Packet Plague router home" />
+        <img src="pp_images/router.png" alt="Packet Plague router" />
+        <img src="pp_images/virus.png" alt="Packet Plague virus" />
+        <img src="pp_images/virus_on_critical.png" alt="Packet Plague virus on critical router" />
+        <img src="pp_images/critical_router.png" alt="Packet Plague critical router" />
+        <img src="pp_images/Jumpscare.png" alt="Packet Plague jumpscare" />
+        <img src="pp_images/Schermafbeelding 2026-04-30 172143.png" alt="Packet Plague screenshot" />
+      </div>
+    </div>
+  </div>
+
   <script src="nav.js"></script>
   <script>
     function openLightbox(img) {
@@ -316,8 +350,21 @@
       document.getElementById('lightbox').classList.remove('active');
       document.body.style.overflow = '';
     }
+    function openPacketPlagueGallery() {
+      document.getElementById('packet-plague-gallery').classList.add('active');
+      document.getElementById('packet-plague-gallery').setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closePacketPlagueGallery() {
+      document.getElementById('packet-plague-gallery').classList.remove('active');
+      document.getElementById('packet-plague-gallery').setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
     document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'Escape') {
+        closeLightbox();
+        closePacketPlagueGallery();
+      }
     });
   </script>
 </body>
